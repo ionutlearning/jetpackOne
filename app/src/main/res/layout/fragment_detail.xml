@@ -5,6 +5,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:padding="20dp"
         android:layout_height="match_parent"
         tools:context=".view.DetailFragment">
 
@@ -18,7 +19,7 @@
             tools:layout_editor_absoluteY="89dp" />
 
         <TextView
-            android:id="@+id/dogName"
+            android:id="@+id/breed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
@@ -28,23 +29,23 @@
             app:layout_constraintTop_toBottomOf="@+id/dogImg" />
 
         <TextView
-            android:id="@+id/dogPurpose"
+            android:id="@+id/temperament"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
             android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dogName" />
+            app:layout_constraintTop_toBottomOf="@+id/breed" />
 
         <TextView
-            android:id="@+id/dogAge"
+            android:id="@+id/lifespan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
             android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dogPurpose" />
+            app:layout_constraintTop_toBottomOf="@+id/temperament" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

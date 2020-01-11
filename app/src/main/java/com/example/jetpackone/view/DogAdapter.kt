@@ -3,6 +3,7 @@ package com.example.jetpackone.view
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.jetpackone.R
 import com.example.jetpackone.model.DogBreed
@@ -29,6 +30,9 @@ class DogAdapter(private val dogsList: ArrayList<DogBreed>) :
         val dog = dogsList[position]
         holder.view.name.text = dog.dogBreed
         holder.view.lifespan.text = dog.lifeSpan
+        holder.view.setOnClickListener() {
+            Navigation.findNavController(it).navigate(ListFragmentDirections.actionDetailFragment())
+        }
     }
 
     class DogViewHolder(var view: View) : RecyclerView.ViewHolder(view)
