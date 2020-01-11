@@ -30,12 +30,6 @@ private var uuid : Int = 0
 
         arguments?.let {
             uuid = DetailFragmentArgs.fromBundle(it).dogUuid
-            detailTv.text = uuid.toString()
-        }
-
-        buttonList.setOnClickListener {
-            val action = DetailFragmentDirections.actionListFragment()
-            Navigation.findNavController(it).navigate(action)
         }
     }
 }
